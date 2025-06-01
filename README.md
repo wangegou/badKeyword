@@ -25,8 +25,8 @@ import (
 	badKeywords "github.com/wangegou/badKeyword"
 )
 func main() {
-
-	if badKeywords.Check_Keywords(text) {
+	text := "待检测字符串"
+	if badKeywords.Check_Keywords(text ) {
 		// println("文本包含敏感词！")
 	} else {
 		// println("文本不包含敏感词。")
