@@ -1,6 +1,7 @@
 # badKeyword
 
 一个用于敏感词匹配的 Go 语言库，基于 Aho-Corasick 算法实现高效关键词检测。
+依赖：https://github.com/cloudflare/ahocorasick 实现
 
 ---
 
@@ -43,6 +44,8 @@ func main() {
 - 可扩展自定义关键词库
 
 使用建议
+
+【本项目有个缺点，内存占用大，因为 AC 自动机构建的 Trie 规模很庞大，内存占用 2.4G】
 
 - 根据业务需求合理维护关键词库，定期更新
 - 大规模关键词建议分批加载，提升匹配效率
